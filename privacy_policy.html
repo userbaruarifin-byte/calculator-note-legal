@@ -20,19 +20,29 @@
 <body>
 
 <h1>Privacy Policy — Calculator Note</h1>
-<p class="updated">Last updated: August 29, 2026</p>
+<p class="updated">Last updated: September 20, 2026</p>
 
-<p>Calculator Note ("the app", "we", "us") is a calculator app with an optional hidden, password-protected notes feature. This policy explains what data the app collects, how it's used, and your choices — for Android, iOS, Windows, macOS, Linux, and Web versions of the app.</p>
+<p>Calculator Note ("the app", "we", "us") is a calculator app with an optional hidden, password-protected area for notes and files. This policy explains what data the app collects, how it's used, and your choices — for Android, iOS, Windows, macOS, Linux, and Web versions of the app.</p>
 
-<h2>1. Your notes stay on your device</h2>
-<p>Everything you write in the notes feature is stored <strong>only on your device</strong>, never on our servers. Specifically:</p>
+<h2>1. Your notes and files stay on your device</h2>
+<p>Everything you keep in the protected area — notes, and any files you hide there — is stored <strong>only on your device</strong>, never on our servers. Specifically:</p>
 <ul>
   <li>Notes are stored locally in an encrypted database, encrypted with a device-specific key plus an additional layer of app-level encryption.</li>
+  <li>Files you hide (photos, videos, documents, audio — anything you pick or share into the app) are encrypted with a key generated on your device and kept in your device's secure OS storage, then stored in the app's private storage. They are never uploaded. Links you save are stored the same way.</li>
   <li>Your unlock password is stored in your device's secure OS storage (Android Keystore / iOS Keychain), salted and encrypted. We never see it, and it is never transmitted anywhere. There is no recovery mechanism: we cannot read it, reset it, or recover the notes behind it.</li>
-  <li>We have no server, database, or backend that stores your notes or password — if you delete the app or lose your device without a backup, that data cannot be recovered by us because we never had it.</li>
+  <li>We have no server, database, or backend that stores your notes, files, or password — if you delete the app or lose your device without a backup, that data cannot be recovered by us because we never had it.</li>
 </ul>
 
-<h2>2. Data we do collect</h2>
+<h2>2. Hiding a file moves it</h2>
+<p>When you hide a file, the app encrypts a copy into the protected area, checks that the encrypted copy reads back <em>identically</em> to the original, and only then deletes the original from where it was — your gallery, your Downloads folder, or wherever you picked it from. That deletion is what makes the file disappear from those places.</p>
+<ul>
+  <li>Nothing is ever deleted unless the encrypted copy was written and verified first.</li>
+  <li>Android may show its own confirmation before deleting. That prompt comes from the operating system, not from us, and you have to accept it.</li>
+  <li>If a file cannot be deleted — the source is read-only, the system refuses, or another app shared only a copy with us — the app says so for that specific file and the original stays where it is. We do not claim a file was removed when it wasn't.</li>
+  <li>Deletion only ever applies to the file you just hid. The app does not search your device for other copies of it, and does not touch anything you hid previously.</li>
+</ul>
+
+<h2>3. Data we do collect</h2>
 <table>
   <tr><th>What</th><th>Why</th><th>Who sees it</th></tr>
   <tr>
@@ -55,27 +65,45 @@
     <td>Lets you attach an image to a note if you choose to; requires OS photo-access permission</td>
     <td>Stored locally with the note, same as note text — never uploaded</td>
   </tr>
+  <tr>
+    <td>A front-camera photo taken after repeated wrong passwords — <strong>only if you switch this on yourself</strong></td>
+    <td>Optional security feature: it records who tried to open your protected area after three wrong passwords in a row. It is <strong>off by default</strong>, and the camera permission is only ever requested after you turn it on</td>
+    <td>Nobody but you. The photo is encrypted into your protected area on the device and is never uploaded; you can view or delete it in the app's security log at any time</td>
+  </tr>
 </table>
 
 <p>We do not use Firebase, Crashlytics, or any general-purpose analytics SDK. We do not track you across other apps or websites, beyond the standard advertising identifiers used by Google AdMob for ad delivery.</p>
 
-<h2>3. Desktop and Web versions</h2>
+<h2>4. Device permissions and security features</h2>
+<p>The app asks your operating system for a permission only when a feature you are using needs one. None of these send anything off your device.</p>
+<ul>
+  <li><strong>Camera</strong> — used for one thing only: the optional photo of a failed unlock attempt described above. This feature ships turned off; if you never turn it on, the app never asks for camera access and never opens the camera. The app does not record video or audio.</li>
+  <li><strong>Fingerprint / face unlock</strong> — if you enable it, your device performs the check and tells the app only whether it succeeded. Your fingerprint and face data stay with your operating system's secure hardware; the app never receives, stores, or transmits them.</li>
+  <li><strong>Files and photos you choose</strong> — the app can only read the specific files you pick in the system file picker, or that another app shares with it. It does not browse your storage or scan your photo library.</li>
+  <li><strong>Screenshot blocking</strong> — while your protected area is open, the app asks Android to block screenshots and screen recording and to hide the preview shown in the app switcher. This is a local display setting; it collects nothing. You can turn it off in the app's security settings.</li>
+</ul>
+
+<h2>5. A second password (decoy)</h2>
+<p>You can optionally set a second, "decoy" password. Entering it opens a separate protected area with its own notes and files, kept apart from your real one. Both live only on your device under the same encryption described above, and we have no access to either — we cannot tell you, anyone else, or a court which password is which, because that information never leaves your device and we never had it.</p>
+
+<h2>6. Desktop and Web versions</h2>
 <p>The Windows, macOS, Linux, and Web versions of the app show no ads and use no advertising SDK. They use the same anonymous device ID and RevenueCat-based purchase check described above for premium unlock via web checkout (Stripe, processed by RevenueCat) — we never receive your payment card details.</p>
 
-<h2>4. Your choices</h2>
+<h2>7. Your choices</h2>
 <ul>
   <li><strong>Ad personalization:</strong> in the EEA/UK, you'll see a consent prompt (via Google's User Messaging Platform) the first time you open the app, where you can decline personalized ads. On iOS, you can also decline via Apple's App Tracking Transparency prompt.</li>
   <li><strong>Restore purchases:</strong> available anytime from the paywall screen, using the anonymous device ID above.</li>
-  <li><strong>Delete your data:</strong> uninstalling the app permanently deletes all locally stored notes and your password, since nothing is stored remotely. You may also delete individual notes at any time within the app.</li>
+  <li><strong>Security features are yours to turn off:</strong> biometric unlock, locking when you leave the app, screenshot blocking, the photo of failed attempts, and the decoy password are all in the app's security settings, and each can be switched off or removed at any time.</li>
+  <li><strong>Delete your data:</strong> uninstalling the app permanently deletes all locally stored notes, hidden files, security-log photos and your password, since nothing is stored remotely. You may also delete individual notes, files and log entries at any time within the app. A file you hid can be saved back out to normal storage first, using "Unhide".</li>
 </ul>
 
-<h2>5. Children's privacy</h2>
+<h2>8. Children's privacy</h2>
 <p>Calculator Note is not directed at children under 13, and we do not knowingly collect personal information from children under 13.</p>
 
-<h2>6. Changes to this policy</h2>
+<h2>9. Changes to this policy</h2>
 <p>We may update this policy from time to time. The "Last updated" date above will reflect the most recent revision. Continued use of the app after changes means you accept the updated policy.</p>
 
-<h2>7. Contact us</h2>
+<h2>10. Contact us</h2>
 <p>Questions about this policy or your data? Email us at <a href="mailto:userbaruarifin@gmail.com">userbaruarifin@gmail.com</a>.</p>
 
 </body>
