@@ -20,7 +20,7 @@
 <body>
 
 <h1>Privacy Policy — Calculator Note</h1>
-<p class="updated">Last updated: September 20, 2026</p>
+<p class="updated">Last updated: September 23, 2026</p>
 
 <p>Calculator Note ("the app", "we", "us") is a calculator app with an optional hidden, password-protected area for notes and files. This policy explains what data the app collects, how it's used, and your choices — for Android, iOS, Windows, macOS, Linux, and Web versions of the app.</p>
 
@@ -83,8 +83,13 @@
   <li><strong>Screenshot blocking</strong> — while your protected area is open, the app asks Android to block screenshots and screen recording and to hide the preview shown in the app switcher. This is a local display setting; it collects nothing. You can turn it off in the app's security settings.</li>
 </ul>
 
-<h2>5. A second password (decoy)</h2>
-<p>You can optionally set a second, "decoy" password. Entering it opens a separate protected area with its own notes and files, kept apart from your real one. Both live only on your device under the same encryption described above, and we have no access to either — we cannot tell you, anyone else, or a court which password is which, because that information never leaves your device and we never had it.</p>
+<h2>5. What happens when a password doesn't match</h2>
+<p>There is no second password to set up, and nothing extra is stored to make this work.</p>
+<p>A password that isn't yours is <strong>never rejected</strong>. Instead of an error, it opens a protected area of its own, which starts out empty — no notes, no hidden files, no shared content. Anything saved while such a password is open is kept separately from your real notes and files, stays on your device only, and is covered by the same encryption described above.</p>
+<p>The area a given password opens is derived from that password together with a random key created on your device when the app is first used. Two consequences follow: the same password always returns to the same area, and two different passwords never see each other's contents. The password itself is not stored, and it does not appear in the name of anything saved on your device.</p>
+<p>We cannot tell you, anyone else, or a court which password is which, or how many of these areas exist on your device — none of that information ever leaves your device, and we never had it. Unlocking with a fingerprint or face always opens your real area, never one of these.</p>
+<p>Failed attempts are still recorded. Each one is counted in the app's security log, and if you turned the optional photo feature on, the third wrong password in a row is still photographed as described above — the app simply does not say on screen that anything was wrong.</p>
+<p><strong>What this does not protect against.</strong> These areas are kept apart by how they are named on your device, not by separate encryption keys. Someone with full technical access to your unlocked device — for example, using developer tools — could tell that more than one such area exists. This feature is meant for the situation where someone asks you to open the app in front of them; it is not designed to withstand forensic examination.</p>
 
 <h2>6. Desktop and Web versions</h2>
 <p>The Windows, macOS, Linux, and Web versions of the app show no ads and use no advertising SDK. They use the same anonymous device ID and RevenueCat-based purchase check described above for premium unlock via web checkout (Stripe, processed by RevenueCat) — we never receive your payment card details.</p>
@@ -93,7 +98,7 @@
 <ul>
   <li><strong>Ad personalization:</strong> in the EEA/UK, you'll see a consent prompt (via Google's User Messaging Platform) the first time you open the app, where you can decline personalized ads. On iOS, you can also decline via Apple's App Tracking Transparency prompt.</li>
   <li><strong>Restore purchases:</strong> available anytime from the paywall screen, using the anonymous device ID above.</li>
-  <li><strong>Security features are yours to turn off:</strong> biometric unlock, locking when you leave the app, screenshot blocking, the photo of failed attempts, and the decoy password are all in the app's security settings, and each can be switched off or removed at any time.</li>
+  <li><strong>Security features are yours to turn off:</strong> biometric unlock, locking when you leave the app, screenshot blocking and the photo of failed attempts are all in the app's security settings, and each can be switched off at any time. The behaviour described in section 5 is not a setting — it is simply how the app responds to a password that doesn't match — so there is nothing to turn on, and nothing extra stored about it.</li>
   <li><strong>Delete your data:</strong> uninstalling the app permanently deletes all locally stored notes, hidden files, security-log photos and your password, since nothing is stored remotely. You may also delete individual notes, files and log entries at any time within the app. A file you hid can be saved back out to normal storage first, using "Unhide".</li>
 </ul>
 
