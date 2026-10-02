@@ -31,12 +31,12 @@
 <h2 id="buka">1. Membuka Math Notes</h2>
 <ol class="steps">
   <li>Di layar kalkulator, ketuk ikon <b class="ui">mode</b> (kotak kecil bergambar + − × =) di kanan atas.</li>
-  <li>Muncul <b class="ui">Choose your mode</b>. Di tab <b class="ui">Modes</b>, ketuk kartu <b class="ui">Math Notes</b>.</li>
+  <li>Muncul <b class="ui">Pilih mode</b>. Di tab <b class="ui">Mode</b>, ketuk kartu <b class="ui">Math Notes</b>.</li>
   <li>Pilihan langsung tertutup dan Math Notes terbuka. Untuk kembali ke kalkulator biasa, ketuk panah kembali di kiri atas.</li>
 </ol>
 <div class="shots">
-  <figure><img src="../img/calculator.png" alt="Layar kalkulator"><figcaption>Ikon mode ada di kanan atas, di sebelah titik tiga.</figcaption></figure>
-  <figure><img src="../img/mode-sheet.png" alt="Pilihan mode"><figcaption>Geser kartu atau ketuk tab Modes, Tools, Settings.</figcaption></figure>
+  <figure><img src="img/calculator.png" alt="Layar kalkulator"><figcaption>Ikon mode ada di kanan atas, di sebelah titik tiga.</figcaption></figure>
+  <figure><img src="img/mode-sheet.png" alt="Pilihan mode"><figcaption>Geser kartu atau ketuk tab Mode, Alat, Pengaturan.</figcaption></figure>
 </div>
 
 <h2 id="baris">2. Menulis baris pertama</h2>
@@ -44,7 +44,7 @@
 <ul>
   <li><b>Boleh pakai kata.</b> <code>Lunch 25rb</code> dan <code>Groceries 150rb + 45rb</code> tetap terhitung, karena kata-kata dianggap keterangan dan diabaikan.</li>
   <li>Tekan <b>Enter</b> di keyboard untuk membuat baris baru.</li>
-  <li>Untuk menghapus baris, <b>geser baris itu ke kiri</b>. Tulisan merah <b class="ui">Delete</b> muncul di kanan, dan barisnya terhapus. Salah hapus? Ketuk <b class="ui">Undo</b> di bawah layar.</li>
+  <li>Untuk menghapus baris, <b>geser baris itu ke kiri</b>. Tulisan merah <b class="ui">Hapus</b> muncul di kanan, dan barisnya terhapus. Salah hapus? Ketuk <b class="ui">Urungkan</b> di bawah layar.</li>
   <li>Semua tersimpan otomatis, tidak perlu tombol simpan.</li>
 </ul>
 <div class="shots">
@@ -91,7 +91,7 @@
   <li>Awali baris dengan <code>#</code> untuk membuat judul bagian, misalnya <code>#&nbsp;Income</code> atau <code>#&nbsp;Pengeluaran</code>. Judul tampil tebal dan tidak dihitung.</li>
   <li>Tulis baris-baris angka di bawahnya.</li>
   <li>Tulis <code>subtotal</code> atau <code>sum</code> untuk menjumlahkan bagian itu saja (dari judul terakhir sampai baris ini). Tulis <code>average</code> untuk rata-ratanya.</li>
-  <li>Tandai pengeluaran dengan tombol <b class="ui">+</b> di kanan baris (lihat bagian berikutnya), maka sisanya langsung tampil di bawah sebagai <b class="ui">BALANCE</b>.</li>
+  <li>Tandai pengeluaran dengan tombol <b class="ui">+</b> di kanan baris (lihat bagian berikutnya), maka sisanya langsung tampil di bawah sebagai <b class="ui">SALDO</b>.</li>
 </ol>
 <div class="shots">
   <figure><img src="../img/notes-cashflow.png" alt="Contoh anggaran bulanan"><figcaption>Pemasukan dan pengeluaran dalam satu halaman. Pengeluaran ditandai minus, jadi BALANCE langsung menjadi sisa uang.</figcaption></figure>
@@ -120,14 +120,14 @@
 <p>Begitu ada satu pengeluaran, bagian bawah menampilkan rinciannya:</p>
 <div class="tablewrap"><table>
   <tr><th>Di layar</th><th>Artinya</th></tr>
-  <tr><td><b class="ui">In</b></td><td>jumlah semua pemasukan</td></tr>
-  <tr><td><b class="ui">Out</b></td><td>jumlah semua pengeluaran</td></tr>
-  <tr><td><b class="ui">BALANCE</b></td><td>sisa uang: In dikurangi Out</td></tr>
+  <tr><td><b class="ui">Masuk</b></td><td>jumlah semua pemasukan</td></tr>
+  <tr><td><b class="ui">Keluar</b></td><td>jumlah semua pengeluaran</td></tr>
+  <tr><td><b class="ui">SALDO</b></td><td>sisa uang: In dikurangi Out</td></tr>
 </table></div>
 <p>Contoh: <code>Gaji 5jt</code>, lalu <code>Bensin 50rb</code> dan <code>Makan 30rb</code> yang ditandai pengeluaran, menghasilkan In 5.000.000, Out 80.000, dan BALANCE 4.920.000.</p>
 <div class="shots">
   <figure><img src="../img/notes-before.png" alt="Semua baris masih dihitung pemasukan"><figcaption>Sebelum: Rent, Fuel, dan Groceries masih bertanda +, jadi ikut menambah TOTAL.</figcaption></figure>
-  <figure><img src="../img/notes-in-out.png" alt="Pengeluaran ditandai minus"><figcaption>Sesudah ketuk +: pengeluaran merah, dan bawahnya menampilkan In, Out, dan BALANCE.</figcaption></figure>
+  <figure><img src="img/notes-in-out.png" alt="Pengeluaran ditandai minus"><figcaption>Sesudah ketuk +: pengeluaran merah, dan bawahnya menampilkan Masuk, Keluar, dan SALDO.</figcaption></figure>
 </div>
 
 <h2 id="total">9. Memahami TOTAL dan BALANCE</h2>
@@ -143,20 +143,20 @@
 
 <h2 id="halaman">10. Banyak halaman, simpan, dan ekspor</h2>
 <ul>
-  <li>Ketuk <b class="ui">+</b> di samping tombol <b class="ui">Page 1</b> untuk membuat halaman baru, misalnya satu halaman per bulan. Ketuk nama halaman untuk pindah.</li>
+  <li>Ketuk <b class="ui">+</b> di samping tombol <b class="ui">Halaman 1</b> untuk membuat halaman baru, misalnya satu halaman per bulan. Ketuk nama halaman untuk pindah.</li>
   <li>Ketuk judul halaman (di bawah tombol-tombol halaman) untuk mengganti namanya.</li>
   <li>Ikon <b class="ui">bagikan</b> menyimpan atau mengirim halaman sebagai TXT, CSV (untuk Excel), PDF, atau DOCX. Kalau ada pengeluaran, ekspornya ikut memuat baris In, Out, dan Balance.</li>
   <li>Ikon <b class="ui">tempat sampah</b> menghapus halaman yang sedang dibuka.</li>
 </ul>
 <div class="note tip"><b>Dulu namanya "Sheet"</b>Halaman yang dulu bernama <b>Sheet 1</b>, <b>Sheet 2</b>, dan seterusnya otomatis berganti nama menjadi <b>Page 1</b>, <b>Page 2</b>. Nama yang kamu buat sendiri tidak diubah.</div>
-<div class="note tip"><b>Contoh dari Scientific Pro</b>Penyelesaian soal dari Scientific Pro yang kamu simpan muncul di bawah TOTAL sebagai <b class="ui">Worked examples</b>. Contoh-contoh itu tidak mengubah TOTAL.</div>
+<div class="note tip"><b>Contoh dari Scientific Pro</b>Penyelesaian soal dari Scientific Pro yang kamu simpan muncul di bawah TOTAL sebagai <b class="ui">Contoh soal</b>. Contoh-contoh itu tidak mengubah TOTAL.</div>
 
 <h2 id="contekan">11. Contekan singkat</h2>
 <div class="tablewrap"><table>
   <tr><th>Ingin…</th><th>Tulis</th></tr>
   <tr><td>Menjumlah belanja</td><td><code>Beras 75rb</code> · <code>Minyak 2 * 18rb</code></td></tr>
   <tr><td>Mencatat pengeluaran</td><td>ketuk <b class="ui">+</b> di kanan baris, atau tulis <code>-Bensin 50rb</code></td></tr>
-  <tr><td>Menghapus baris</td><td>geser baris ke kiri (bisa <b class="ui">Undo</b>)</td></tr>
+  <tr><td>Menghapus baris</td><td>geser baris ke kiri (bisa <b class="ui">Urungkan</b>)</td></tr>
   <tr><td>Menyimpan angka</td><td><code>harga = 25rb</code></td></tr>
   <tr><td>Memakai angka itu</td><td><code>harga * 12</code></td></tr>
   <tr><td>Membuat judul bagian</td><td><code># Pengeluaran</code></td></tr>
