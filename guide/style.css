@@ -1,0 +1,95 @@
+:root {
+  --bg: #f6f5f2;
+  --card: #ffffff;
+  --text: #1c1b1a;
+  --muted: #6b665f;
+  --line: #e7e2da;
+  --accent: #b35c00;
+  --accent-soft: #fff1e0;
+  --code: #f1ede7;
+  --warn-bg: #fff4e5;
+  --warn-line: #f0b46a;
+  --tip-bg: #eef6ee;
+  --tip-line: #9fcf9f;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #111111;
+    --card: #1c1c1e;
+    --text: #f2f2f2;
+    --muted: #a3a3a3;
+    --line: #2f2f31;
+    --accent: #ff9f0a;
+    --accent-soft: #2a1e0f;
+    --code: #2a2a2c;
+    --warn-bg: #2b2112;
+    --warn-line: #8a5a1c;
+    --tip-bg: #15241a;
+    --tip-line: #2f6a3f;
+  }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.65;
+  font-size: 17px;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 20px 16px 80px; }
+.top { display: flex; align-items: center; gap: 10px; font-size: 15px; margin-bottom: 8px; }
+.top a { color: var(--accent); text-decoration: none; font-weight: 600; }
+h1 { font-size: 1.9em; line-height: 1.2; margin: 0.3em 0 0.2em; }
+.lead { color: var(--muted); font-size: 1.05em; margin: 0 0 1.6em; }
+h2 { font-size: 1.3em; margin: 2.2em 0 0.6em; padding-top: 0.4em; border-top: 1px solid var(--line); }
+h3 { font-size: 1.05em; margin: 1.6em 0 0.4em; }
+p, li { margin: 0.4em 0; }
+a { color: var(--accent); }
+code, kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  background: var(--code);
+  border-radius: 6px;
+  padding: 1px 6px;
+  font-size: 0.9em;
+}
+b.ui { background: var(--accent-soft); color: var(--accent); border-radius: 6px; padding: 0 6px; font-weight: 600; white-space: nowrap; }
+.toc { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 14px 18px; }
+.toc ol { margin: 0; padding-left: 1.2em; }
+.cards { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); margin: 1.2em 0; }
+.card {
+  display: block; background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+  padding: 16px 18px; color: var(--text); text-decoration: none;
+}
+.card:hover { border-color: var(--accent); }
+.card .ico { font-size: 26px; }
+.card h3 { margin: 6px 0 4px; font-size: 1.08em; }
+.card p { color: var(--muted); font-size: 0.93em; margin: 0; }
+.steps { counter-reset: s; list-style: none; padding: 0; }
+.steps > li {
+  counter-increment: s; position: relative; background: var(--card); border: 1px solid var(--line);
+  border-radius: 14px; padding: 12px 14px 12px 52px; margin: 10px 0;
+}
+.steps > li::before {
+  content: counter(s); position: absolute; left: 14px; top: 12px; width: 26px; height: 26px;
+  border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 14px;
+  display: flex; align-items: center; justify-content: center;
+}
+.note { border-radius: 14px; padding: 12px 16px; margin: 1em 0; border: 1px solid; }
+.note.warn { background: var(--warn-bg); border-color: var(--warn-line); }
+.note.tip { background: var(--tip-bg); border-color: var(--tip-line); }
+.note b:first-child { display: block; margin-bottom: 2px; }
+.shots { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; margin: 1.2em 0; }
+figure { margin: 0; text-align: center; }
+figure img {
+  width: 240px; max-width: 100%; border-radius: 22px; border: 1px solid var(--line);
+  box-shadow: 0 6px 24px rgba(0,0,0,0.10); display: block;
+}
+figcaption { color: var(--muted); font-size: 0.88em; margin-top: 8px; max-width: 240px; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: 0.95em; }
+.tablewrap { overflow-x: auto; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-weight: 600; font-size: 0.9em; }
+td code { white-space: nowrap; }
+footer { color: var(--muted); font-size: 0.85em; margin-top: 3em; border-top: 1px solid var(--line); padding-top: 1em; }

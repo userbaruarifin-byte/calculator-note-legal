@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Math Notes — Panduan Calculator Note</title>
+<meta name="description" content="Cara memakai Math Notes: menulis hitungan per baris, 50rb, 5jt, Rp, variabel, subtotal, dan ekspor.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<div class="top"><a href="index.html">← Semua panduan</a></div>
+
+<h1>Math Notes</h1>
+<p class="lead">Tulis hitungan seperti di buku catatan, satu baris satu hitungan. Hasilnya langsung muncul di kanan, dan totalnya di bawah. Cocok untuk belanja, anggaran bulanan, harga jual, bagi-bagi uang, dan sebagainya.</p>
+
+<div class="toc"><ol>
+  <li><a href="#buka">Membuka Math Notes</a></li>
+  <li><a href="#baris">Menulis baris pertama</a></li>
+  <li><a href="#uang">Menulis uang: 50rb, 5jt, Rp</a></li>
+  <li><a href="#variabel">Variabel: memberi nama pada angka</a></li>
+  <li><a href="#referensi">Memakai hasil baris lain</a></li>
+  <li><a href="#bagian">Judul, subtotal, dan rata-rata</a></li>
+  <li><a href="#persen">Persen dan konversi satuan</a></li>
+  <li><a href="#total">Memahami TOTAL</a></li>
+  <li><a href="#sheet">Banyak sheet, simpan, dan ekspor</a></li>
+  <li><a href="#contekan">Contekan singkat</a></li>
+</ol></div>
+
+<h2 id="buka">1. Membuka Math Notes</h2>
+<ol class="steps">
+  <li>Di layar kalkulator, ketuk ikon <b class="ui">mode</b> (kotak kecil bergambar + − × =) di kanan atas.</li>
+  <li>Muncul <b class="ui">Choose your mode</b>. Di tab <b class="ui">Modes</b>, ketuk kartu <b class="ui">Math Notes</b>.</li>
+  <li>Ketuk <b class="ui">Done</b>. Untuk kembali ke kalkulator biasa, ketuk panah kembali di kiri atas.</li>
+</ol>
+<div class="shots">
+  <figure><img src="img/calculator.png" alt="Layar kalkulator"><figcaption>Ikon mode ada di kanan atas, di sebelah titik tiga.</figcaption></figure>
+  <figure><img src="img/mode-sheet.png" alt="Pilihan mode"><figcaption>Geser kartu atau ketuk tab Modes, Tools, Settings.</figcaption></figure>
+</div>
+
+<h2 id="baris">2. Menulis baris pertama</h2>
+<p>Ketuk baris kosong, lalu ketik hitungan. Kamu tidak perlu menekan sama dengan: hasilnya langsung muncul di kolom kanan.</p>
+<ul>
+  <li><b>Boleh pakai kata.</b> <code>Lunch 25rb</code> dan <code>Groceries 150rb + 45rb</code> tetap terhitung, karena kata-kata dianggap keterangan dan diabaikan.</li>
+  <li>Tekan <b>Enter</b> di keyboard untuk membuat baris baru.</li>
+  <li>Ketuk <b>×</b> di ujung kanan untuk menghapus baris.</li>
+  <li>Semua tersimpan otomatis, tidak perlu tombol simpan.</li>
+</ul>
+<div class="shots">
+  <figure><img src="img/notes-basic.png" alt="Contoh catatan belanja"><figcaption>Catatan belanja sederhana. TOTAL menjumlahkan semua baris.</figcaption></figure>
+</div>
+
+<h2 id="uang">3. Menulis uang: 50rb, 5jt, Rp</h2>
+<p>Tulis uang seperti biasa kamu menulisnya. Math Notes mengerti singkatan Indonesia, dan menghitung uang dengan pas sampai sen.</p>
+<div class="tablewrap"><table>
+  <tr><th>Kamu tulis</th><th>Dibaca sebagai</th></tr>
+  <tr><td><code>50rb</code>, <code>50 ribu</code>, <code>50k</code></td><td>50.000</td></tr>
+  <tr><td><code>5jt</code>, <code>1.5jt</code>, <code>2 juta</code></td><td>5.000.000 · 1.500.000 · 2.000.000</td></tr>
+  <tr><td><code>2M</code>, <code>1.2 miliar</code></td><td>2.000.000.000 · 1.200.000.000</td></tr>
+  <tr><td><code>Rp500.000</code>, <code>Rp 1.250.000,50</code></td><td>500.000 · 1.250.000,50</td></tr>
+  <tr><td><code>5.000.000</code> (titik lebih dari satu)</td><td>5.000.000</td></tr>
+</table></div>
+<div class="note warn"><b>Hati-hati dengan satu titik</b><code>5.000</code> tanpa "Rp" dibaca <b>5</b> (lima koma nol), bukan lima ribu. Tulis <code>5rb</code> atau <code>Rp5.000</code> supaya jelas.</div>
+<div class="note tip"><b>Huruf besar-kecil</b><code>M</code> (besar) artinya miliar, sedangkan <code>m</code> (kecil) artinya meter. <code>k</code> (kecil) artinya ribu, sedangkan <code>K</code> (besar) artinya Kelvin.</div>
+
+<h2 id="variabel">4. Variabel: memberi nama pada angka</h2>
+<p>Tulis <code>nama = angka</code> untuk menyimpan angka, lalu pakai namanya di baris lain. Kalau angkanya berubah, semua baris yang memakainya ikut berubah.</p>
+<ul>
+  <li><code>price = 25rb</code>, lalu <code>price * 120</code> menghasilkan 3.000.000.</li>
+  <li>Nama boleh lebih dari satu kata: <code>uang makan = 50rb</code>, lalu <code>uang makan * 30</code>.</li>
+  <li>Baris variabel tampil abu-abu dan <b>tidak ikut TOTAL</b>, karena baris itu hanya menyimpan angka.</li>
+</ul>
+<div class="shots">
+  <figure><img src="img/notes-variables.png" alt="Contoh variabel"><figcaption>Variabel (abu-abu), referensi baris, persen, dan konversi satuan.</figcaption></figure>
+</div>
+
+<h2 id="referensi">5. Memakai hasil baris lain</h2>
+<div class="tablewrap"><table>
+  <tr><th>Tulis</th><th>Artinya</th></tr>
+  <tr><td><code>line3</code></td><td>hasil baris nomor 3 (lihat nomor kecil di kiri)</td></tr>
+  <tr><td><code>prev</code></td><td>hasil baris sebelumnya</td></tr>
+  <tr><td><code>total</code></td><td>jumlah semua baris di atasnya</td></tr>
+</table></div>
+<p>Contoh: <code>prev * 10%</code> menghitung 10% dari baris sebelumnya, dan <code>line3 - line4</code> mengurangkan dua baris.</p>
+
+<h2 id="bagian">6. Judul, subtotal, dan rata-rata</h2>
+<p>Untuk anggaran bulanan, bagi catatan menjadi beberapa bagian.</p>
+<ol class="steps">
+  <li>Awali baris dengan <code>#</code> untuk membuat judul bagian, misalnya <code>#&nbsp;Income</code> atau <code>#&nbsp;Pengeluaran</code>. Judul tampil tebal dan tidak dihitung.</li>
+  <li>Tulis baris-baris angka di bawahnya.</li>
+  <li>Tulis <code>subtotal</code> atau <code>sum</code> untuk menjumlahkan bagian itu saja (dari judul terakhir sampai baris ini). Tulis <code>average</code> untuk rata-ratanya.</li>
+  <li>Hitung sisanya dengan referensi baris, misalnya <code>Left over line4 - line8</code>.</li>
+</ol>
+<div class="shots">
+  <figure><img src="img/notes-cashflow.png" alt="Contoh anggaran bulanan"><figcaption>Pemasukan, pengeluaran, dan sisa dalam satu sheet.</figcaption></figure>
+</div>
+<div class="note tip"><b>"Total" juga boleh jadi label</b><code>Total belanja 50rb</code> dibaca 50.000. Kata "Total" di situ hanya keterangan. Baru dianggap perintah kalau berdiri sendiri, misalnya <code>total</code> atau <code>total * 2</code>.</div>
+
+<h2 id="persen">7. Persen dan konversi satuan</h2>
+<ul>
+  <li><code>gaji * 10%</code> menghitung 10% dari gaji.</li>
+  <li><code>50rb + 10%</code> menghasilkan 55.000 (ditambah 10% dari dirinya sendiri).</li>
+  <li><code>5 kg in lb</code>, <code>10 km to mi</code>, atau <code>2 h ke min</code> mengonversi satuan. Hasil konversi tampil abu-abu dan tidak ikut TOTAL.</li>
+</ul>
+
+<h2 id="total">8. Memahami TOTAL</h2>
+<p>TOTAL di bagian bawah menjumlahkan <b>semua baris hitungan biasa</b>. Yang tidak ikut dijumlahkan:</p>
+<ul>
+  <li>judul <code>#</code>,</li>
+  <li>baris variabel (<code>nama = …</code>),</li>
+  <li>konversi satuan,</li>
+  <li>baris <code>subtotal</code>, <code>sum</code>, <code>average</code>, dan <code>total</code>, supaya angkanya tidak terhitung dua kali.</li>
+</ul>
+<div class="note warn"><b>Untuk anggaran, lihat baris "sisa", bukan TOTAL</b>Kalau satu sheet berisi pemasukan <i>dan</i> pengeluaran, TOTAL menjumlahkan keduanya, jadi angkanya bukan sisa uangmu. Pakai baris seperti <code>line4 - line8</code> untuk sisa, atau tulis pengeluaran dengan tanda minus (<code>Rent -1.5jt</code>) supaya TOTAL langsung menjadi sisa.</div>
+
+<h2 id="sheet">9. Banyak sheet, simpan, dan ekspor</h2>
+<ul>
+  <li>Ketuk <b class="ui">+</b> di samping nama sheet untuk membuat sheet baru, misalnya satu sheet per bulan. Ketuk nama sheet untuk pindah.</li>
+  <li>Ketuk judul sheet (di bawah tombol-tombol sheet) untuk mengganti namanya.</li>
+  <li>Ikon <b class="ui">bagikan</b> menyimpan atau mengirim sheet sebagai TXT, CSV (untuk Excel), PDF, atau DOCX.</li>
+  <li>Ikon <b class="ui">tempat sampah</b> menghapus sheet yang sedang dibuka.</li>
+</ul>
+<div class="note tip"><b>Contoh dari Scientific Pro</b>Penyelesaian soal dari Scientific Pro yang kamu simpan muncul di bawah TOTAL sebagai <b class="ui">Worked examples</b>. Contoh-contoh itu tidak mengubah TOTAL.</div>
+
+<h2 id="contekan">10. Contekan singkat</h2>
+<div class="tablewrap"><table>
+  <tr><th>Ingin…</th><th>Tulis</th></tr>
+  <tr><td>Menjumlah belanja</td><td><code>Beras 75rb</code> · <code>Minyak 2 * 18rb</code></td></tr>
+  <tr><td>Menyimpan angka</td><td><code>harga = 25rb</code></td></tr>
+  <tr><td>Memakai angka itu</td><td><code>harga * 12</code></td></tr>
+  <tr><td>Membuat judul bagian</td><td><code># Pengeluaran</code></td></tr>
+  <tr><td>Menjumlah satu bagian</td><td><code>subtotal</code> atau <code>sum</code></td></tr>
+  <tr><td>Rata-rata satu bagian</td><td><code>average</code></td></tr>
+  <tr><td>Hasil baris 4 dikurangi baris 8</td><td><code>line4 - line8</code></td></tr>
+  <tr><td>10% dari baris sebelumnya</td><td><code>prev * 10%</code></td></tr>
+  <tr><td>Konversi satuan</td><td><code>5 kg in lb</code></td></tr>
+</table></div>
+
+<footer><a href="index.html">← Semua panduan</a></footer>
+</div>
+</body>
+</html>

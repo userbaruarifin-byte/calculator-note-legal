@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Keamanan &amp; backup — Panduan Calculator Note</title>
+<meta name="description" content="Pengaturan keamanan brankas Calculator Note: sidik jari, kunci otomatis, foto penyusup, samaran aplikasi, panic exit, dan backup ke file.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+<div class="top"><a href="index.html">← Semua panduan</a></div>
+
+<h1>Keamanan &amp; backup</h1>
+<p class="lead">Semua pengaturan ini ada di <b class="ui">Security</b>. Buka brankas, lalu ketuk ikon <b class="ui">perisai</b> di kanan atas. Ikon perisai hanya muncul kalau brankas dibuka dengan password yang benar.</p>
+
+<div class="toc"><ol>
+  <li><a href="#sidikjari">Sidik jari / wajah</a></li>
+  <li><a href="#terbuka">Saat brankas terbuka</a></li>
+  <li><a href="#penyusup">Foto penyusup</a></li>
+  <li><a href="#samaran">Menyamarkan aplikasi</a></li>
+  <li><a href="#panic">Panic exit</a></li>
+  <li><a href="#backup">Backup &amp; pindah HP</a></li>
+  <li><a href="#password">Mengganti password</a></li>
+</ol></div>
+
+<h2 id="sidikjari">1. Sidik jari / wajah</h2>
+<p><b class="ui">Unlocking</b> → <b class="ui">Biometric unlock</b>. Setelah dinyalakan, ketuk judul tiga kali lalu tempelkan jari. Tidak perlu mengetik password.</p>
+<ul>
+  <li>Sidik jari selalu membuka brankas <b>yang asli</b>.</li>
+  <li>Kalau sedang dipaksa membuka, abaikan sidik jari, ketik password lain, dan yang terbuka adalah brankas kosong (lihat <a href="vault.html#salah">Kalau password salah</a>).</li>
+  <li>Sidik jari harus sudah didaftarkan di pengaturan HP terlebih dahulu.</li>
+</ul>
+
+<h2 id="terbuka">2. Saat brankas terbuka</h2>
+<ul>
+  <li><b class="ui">Lock when I leave the app</b> (aktif sejak awal): brankas terkunci begitu kamu pindah ke aplikasi lain atau menekan Home. Memilih file atau membuka file di aplikasi lain tidak mengunci brankas.</li>
+  <li><b class="ui">Block screenshots</b> (aktif sejak awal): layar brankas tidak bisa di-screenshot atau direkam, dan tampil hitam di daftar aplikasi terbaru.</li>
+</ul>
+
+<h2 id="penyusup">3. Foto penyusup</h2>
+<p><b class="ui">If someone else tries</b> → <b class="ui">Photograph failed attempts</b> (mati sejak awal). Setelah 3 kali password salah berturut-turut, kamera depan diam-diam memotret. Fotonya dan catatan percobaannya bisa dilihat di <b class="ui">Security log</b>.</p>
+<ul>
+  <li>Izin kamera baru diminta saat fitur ini kamu nyalakan.</li>
+  <li>Orang yang salah memasukkan password tidak diberi tahu bahwa dia dipotret.</li>
+</ul>
+
+<h2 id="samaran">4. Menyamarkan aplikasi</h2>
+<p><b class="ui">Disguise</b> → <b class="ui">App icon and name</b>. Pilih <b>Calculator</b>, <b>Weather</b>, <b>Clock</b>, atau <b>Compass</b>.</p>
+<ul>
+  <li>Ikon dan nama di layar HP ikut berubah, termasuk di menu Share aplikasi lain.</li>
+  <li>Aplikasinya terbuka sebagai Weather (ketik nama kota), Clock (dengan stopwatch), atau Compass yang <b>benar-benar berfungsi</b>.</li>
+  <li><b>Cara masuk brankas:</b> ketuk judul di atas layar Weather/Clock/Compass tiga kali dengan cepat, sama seperti di kalkulator.</li>
+</ul>
+<div class="note tip"><b>Ikon hilang dari layar utama?</b>Beberapa launcher menghapus ikon lama saat samaran diganti. Cari aplikasinya di laci aplikasi (app drawer), lalu tambahkan lagi ke layar utama. Nama di Pengaturan → Aplikasi tetap "Calculator".</div>
+
+<h2 id="panic">5. Panic exit</h2>
+<p><b class="ui">Under pressure</b> → <b class="ui">Panic exit</b> (mati sejak awal). Saat brankas terbuka:</p>
+<ul>
+  <li><b>telungkupkan HP</b> di meja, atau</li>
+  <li><b>goyangkan HP</b> dengan kuat beberapa kali,</li>
+</ul>
+<p>maka brankas langsung terkunci dan kembali ke kalkulator.</p>
+<div class="note warn"><b>Perhatikan</b>Memegang HP di atas wajah sambil berbaring bisa terbaca sebagai "telungkup". Coba dulu fitur ini sebelum kamu benar-benar mengandalkannya.</div>
+
+<h2 id="backup">6. Backup &amp; pindah HP</h2>
+<p>Isi brankas hanya ada di HP ini. Isinya <b>tidak ikut</b> backup otomatis Google. Kalau HP hilang, rusak, atau diganti tanpa backup, isinya ikut hilang.</p>
+<h3>Membuat backup</h3>
+<ol class="steps">
+  <li><b class="ui">Backup</b> → <b class="ui">Back up to a file</b>.</li>
+  <li>Buat <b class="ui">Backup password</b>, lalu ketik sekali lagi di <b class="ui">Type it again</b>. Password ini boleh berbeda dari password brankas. <b>Jangan sampai lupa.</b></li>
+  <li>Pilih tempat menyimpan file backup, misalnya Google Drive atau folder Download, lalu ketuk <b class="ui">Back up</b>.</li>
+</ol>
+<p>File backup berisi catatan (beserta gambarnya), file tersembunyi, Shared Content dan link, rumus buatanmu, Cash Log, dan pengingat. Semuanya terenkripsi dengan password backup.</p>
+<h3>Memulihkan di HP baru</h3>
+<ol class="steps">
+  <li>Pasang aplikasinya, lalu buat password brankas.</li>
+  <li>Buka Security → <b class="ui">Backup</b> → <b class="ui">Restore from a backup</b>.</li>
+  <li>Pilih file backup, lalu masukkan password backup.</li>
+</ol>
+<div class="note tip"><b>Aman diulang</b>Restore hanya <b>menambahkan</b> isi backup dan tidak pernah menimpa yang sudah ada. Restore file yang sama dua kali tidak membuat isinya dobel.</div>
+
+<h2 id="password">7. Mengganti password</h2>
+<p>Buka <b class="ui">Encrypted Note</b>, buka menu samping, lalu pilih <b class="ui">Change password</b>. Kamu perlu memasukkan password lama. Menu ini hanya muncul kalau brankas dibuka dengan password yang benar.</p>
+
+<footer><a href="index.html">← Semua panduan</a> · <a href="vault.html">← Brankas rahasia</a></footer>
+</div>
+</body>
+</html>
