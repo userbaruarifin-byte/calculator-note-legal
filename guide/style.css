@@ -94,3 +94,6 @@ th { color: var(--muted); font-weight: 600; font-size: 0.9em; }
 td code { white-space: nowrap; }
 footer { color: var(--muted); font-size: 0.85em; margin-top: 3em; border-top: 1px solid var(--line); padding-top: 1em; }
 .visitors { margin: 0.6em 0 0; font-variant-numeric: tabular-nums; }
+.lang { margin-left: auto; font-size: 14px; color: var(--muted); white-space: nowrap; }
+.lang b { color: var(--text); }
+.lang a { font-weight: 600; }
