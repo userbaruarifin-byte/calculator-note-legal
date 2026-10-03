@@ -17,7 +17,7 @@
 <div class="toc"><ol>
   <li><a href="#buka">Membuka Math Notes</a></li>
   <li><a href="#baris">Menulis baris pertama</a></li>
-  <li><a href="#uang">Menulis uang: 50rb, 5jt, Rp</a></li>
+  <li><a href="#uang">Menulis uang: 50rb, 5jt, Rp, $, €, ¥</a></li>
   <li><a href="#variabel">Variabel: memberi nama pada angka</a></li>
   <li><a href="#referensi">Memakai hasil baris lain</a></li>
   <li><a href="#bagian">Judul, subtotal, dan rata-rata</a></li>
@@ -63,7 +63,29 @@
   <tr><td><code>5.000.000</code> (titik lebih dari satu)</td><td>5.000.000</td></tr>
 </table></div>
 <div class="note warn"><b>Hati-hati dengan satu titik</b><code>5.000</code> tanpa "Rp" dibaca <b>5</b> (lima koma nol), bukan lima ribu. Tulis <code>5rb</code> atau <code>Rp5.000</code> supaya jelas.</div>
-<div class="note tip"><b>Huruf besar-kecil</b><code>M</code> (besar) artinya miliar, sedangkan <code>m</code> (kecil) artinya meter. <code>k</code> (kecil) artinya ribu, sedangkan <code>K</code> (besar) artinya Kelvin.</div>
+<div class="note tip"><b>Huruf besar-kecil</b><code>M</code> (besar) artinya miliar, atau juta jika setelah mata uang selain rupiah, sedangkan <code>m</code> (kecil) artinya meter. <code>k</code> (kecil) artinya ribu, sedangkan <code>K</code> (besar) artinya Kelvin, kecuali tepat setelah mata uang: <code>$100K</code> = 100.000.</div>
+
+<h3 id="mata-uang">Dolar, euro, yen, dan mata uang lain</h3>
+<p>Tulis simbol atau kode mata uang di samping angkanya. Hasilnya ikut menampilkan simbol itu.</p>
+<div class="tablewrap"><table>
+  <tr><th>Kamu tulis</th><th>Dibaca sebagai</th></tr>
+  <tr><td><code>$100k</code>, <code>$1.250,50</code>, <code>100 USD</code></td><td>$100.000 · $1.250,5 · $100</td></tr>
+  <tr><td><code>¥1.200</code>, <code>$1,250.50</code> (gaya Inggris juga bisa)</td><td>¥1.200 · $1.250,5</td></tr>
+  <tr><td><code>€20</code>, <code>£20</code>, <code>¥1.200</code>, <code>₩5000</code>, <code>₹500</code></td><td>euro, pound, yen, won, rupee</td></tr>
+  <tr><td><code>S$20</code>, <code>A$20</code>, <code>RM20</code>, <code>SR20</code>, <code>CN¥20</code> atau <code>RMB 20</code></td><td>dolar Singapura dan Australia, ringgit, riyal, yuan</td></tr>
+  <tr><td><code>Rp50.000</code></td><td>Rp50.000</td></tr>
+</table></div>
+<ul>
+  <li><b>Satu halaman, satu mata uang.</b> Mata uang pertama yang kamu tulis menjadi mata uang halaman itu. Baris dengan mata uang lain menampilkan kodenya dengan warna merah, misalnya <b class="ui">IDR ≠</b>, tidak ikut TOTAL, dan pesan <b class="ui">Perhitungan mata uang harus seragam</b> muncul di atas TOTAL. Pakai halaman baru untuk mata uang lain.</li>
+  <li><b>Untuk mengonversi, tulis tujuannya:</b> <code>$100 in IDR</code> atau <code>100 USD ke IDR</code> dihitung dengan kurs terbaru. Hasil konversi berwarna abu-abu dan tidak ikut TOTAL.</li>
+  <li>Nama ikut membawa mata uangnya: setelah <code>harga = $20</code>, baris <code>harga * 3</code> hasilnya $60.</li>
+  <li><code>¥</code> adalah yen Jepang. Untuk yuan Tiongkok tulis <code>CN¥</code>, <code>RMB</code>, atau <code>CNY</code>.</li>
+  <li><code>M</code> mengikuti mata uangnya: <code>$3M</code> = 3.000.000 (juta), <code>Rp3M</code> = 3.000.000.000 (miliar). Tanpa mata uang, <code>M</code> berarti miliar.</li>
+</ul>
+<div class="shots">
+  <figure><img src="img/notes-currency.png" alt="Halaman dalam dolar AS"><figcaption>Halaman dalam dolar. <code>$5 + €5</code> mencampur dua mata uang, jadi ditandai merah dan tidak ikut TOTAL.</figcaption></figure>
+</div>
+<div class="note tip"><b>Angka mengikuti bahasa aplikasi</b>Dalam bahasa Indonesia hasil ditulis <code>100.000,5</code>; dalam bahasa Inggris <code>100,000.5</code>. Yang berubah hanya tampilannya.</div>
 
 <h2 id="variabel">4. Variabel: memberi nama pada angka</h2>
 <p>Tulis <code>nama = angka</code> untuk menyimpan angka, lalu pakai namanya di baris lain. Kalau angkanya berubah, semua baris yang memakainya ikut berubah.</p>

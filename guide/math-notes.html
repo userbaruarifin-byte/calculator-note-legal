@@ -17,7 +17,7 @@
 <div class="toc"><ol>
   <li><a href="#open">Opening Math Notes</a></li>
   <li><a href="#lines">Writing your first lines</a></li>
-  <li><a href="#money">Writing money: 50rb, 5jt, Rp</a></li>
+  <li><a href="#money">Writing money: 50rb, 5jt, Rp, $, €, ¥</a></li>
   <li><a href="#variables">Variables: giving a number a name</a></li>
   <li><a href="#references">Using another line's answer</a></li>
   <li><a href="#sections">Headings, subtotals and averages</a></li>
@@ -63,7 +63,29 @@
   <tr><td><code>5.000.000</code> (more than one dot)</td><td>5,000,000</td></tr>
 </table></div>
 <div class="note warn"><b>Careful with a single dot</b><code>5.000</code> without "Rp" reads as <b>5</b> (five point zero), not five thousand. Write <code>5rb</code> or <code>Rp5.000</code> to be clear.</div>
-<div class="note tip"><b>Capitals matter</b>Capital <code>M</code> means billion (miliar), small <code>m</code> means metres. Small <code>k</code> means thousand, capital <code>K</code> means kelvin.</div>
+<div class="note tip"><b>Capitals matter</b>Capital <code>M</code> means billion (miliar), or million after a currency other than rupiah; small <code>m</code> means metres. Small <code>k</code> means thousand, capital <code>K</code> means kelvin, except right after a currency: <code>$100K</code> is 100,000.</div>
+
+<h3 id="currencies">Dollars, euros, yen and other currencies</h3>
+<p>Write a currency symbol or code next to the amount. The answer then shows the symbol too.</p>
+<div class="tablewrap"><table>
+  <tr><th>You write</th><th>It reads</th></tr>
+  <tr><td><code>$100k</code>, <code>$1,250.50</code>, <code>100 USD</code></td><td>$100,000 · $1,250.5 · $100</td></tr>
+  <tr><td><code>$1.250,50</code>, <code>¥1.200</code> (Indonesian style)</td><td>$1,250.5 · ¥1,200</td></tr>
+  <tr><td><code>€20</code>, <code>£20</code>, <code>¥1,200</code>, <code>₩5000</code>, <code>₹500</code></td><td>euro, pound, yen, won, rupee</td></tr>
+  <tr><td><code>S$20</code>, <code>A$20</code>, <code>RM20</code>, <code>SR20</code>, <code>CN¥20</code> or <code>RMB 20</code></td><td>Singapore and Australian dollar, ringgit, riyal, yuan</td></tr>
+  <tr><td><code>Rp50.000</code></td><td>Rp50,000</td></tr>
+</table></div>
+<ul>
+  <li><b>One currency per page.</b> The first currency you write is the page's currency. A line in another currency shows its code in red, such as <b class="ui">IDR ≠</b>, is left out of TOTAL, and <b class="ui">Currency calculations must be uniform</b> appears above TOTAL. Start a new page for another currency.</li>
+  <li><b>To convert, say so:</b> <code>$100 in IDR</code> or <code>100 USD in IDR</code> converts at the latest rate. A conversion is grey and never counts in TOTAL.</li>
+  <li>A name keeps its currency: after <code>price = $20</code>, the line <code>price * 3</code> is $60.</li>
+  <li><code>¥</code> is the Japanese yen. For the Chinese yuan write <code>CN¥</code>, <code>RMB</code> or <code>CNY</code>.</li>
+  <li><code>M</code> follows the currency: <code>$3M</code> is 3,000,000 (million), <code>Rp3M</code> is 3,000,000,000 (miliar). With no currency, <code>M</code> is miliar.</li>
+</ul>
+<div class="shots">
+  <figure><img src="img/notes-currency.png" alt="A page in US dollars"><figcaption>A page in dollars. <code>$5 + €5</code> mixes two currencies, so it is marked in red and left out of TOTAL.</figcaption></figure>
+</div>
+<div class="note tip"><b>Numbers follow the app language</b>In English an answer reads <code>100,000.5</code>; with the app in Indonesian it reads <code>100.000,5</code>. Only the way it is shown changes.</div>
 
 <h2 id="variables">4. Variables: giving a number a name</h2>
 <p>Write <code>name = number</code> to store a number, then use the name on other lines. Change the number and every line that uses it changes too.</p>
